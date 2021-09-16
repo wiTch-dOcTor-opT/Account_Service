@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Accounts
+
+eureka:
+  instance:
+    hostname: springboot-eureka-server.herokuapp.com
+  client:
+    serviceUrl:
+      defaultZone: https://${eureka.instance.hostname}/eureka/
+      non-secure-port: 80
+      secure-port: 443
+      non-secure-port-enabled: true
